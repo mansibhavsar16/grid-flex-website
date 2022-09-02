@@ -1,0 +1,97 @@
+.* {
+    box-sizing: border-box;
+    
+}
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 50% auto;
+    grid-template-rows: 60px auto 60px;
+    grid-template-areas: "hd hd"
+                         "sidebar main"
+                         "footer footer";
+}
+h2{
+    float:left;
+    color:aliceblue;
+    padding-left: 20px;
+}
+
+aside,
+main{
+    padding: 16px;
+    text-align: center;
+}
+header{
+    text-align:right;
+}
+header {
+    background: #521751;
+    grid-area: hd;
+}
+
+aside {
+    padding-top: 100px;
+    color: white;
+    background-color: black;
+    grid-area: sidebar;
+}
+
+main {
+    grid-area: main;
+}
+footer{
+    text-align: center;
+}
+footer {
+    background: #521751;
+    grid-area: footer;
+}
+
+.navigation-list {
+    list-style: none;
+    margin: 0;
+    padding-top: 25px;
+    padding-right: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: right;
+    height: 100%;
+}
+
+.navigation-item {
+    margin: 0 10px;
+}
+.left{
+    float:left;
+}
+
+.navigation-item a {
+    text-decoration: none;
+    color: white;
+}
+
+.navigation-item a:hover,
+.navigation-item a:active {
+    color: black;
+}
+
+.back2{
+    background-color: white;
+    width: 40%;
+    margin: 10px;
+    padding: 20px;
+    margin-left: 70px;
+    border: solid;
+    border-color: black;
+    border-width: 3px;
+}
+
+button{
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
